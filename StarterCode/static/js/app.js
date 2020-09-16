@@ -4,18 +4,30 @@ function unpack(rows, index) {
     });
   }
   
-  function buildPlot() {
-    d3.json("../data/samples.json").then(function(data) {
+ // function buildPlot() {
+  d3.json("../data/samples.json").then(function(importdata) {
+  var data = importdata
+  var subject_ids = unpack(data.samples, 4) 
   
+  console.log(data); 
+  console.log(subject_ids)
+  })
+
+
       // Grab values from the data json object to build the plots
-    var subject_id = data.samples.id;  
+  // var subject_id = data.name;  
 
   //    var stock = data.dataset.dataset_code;
  //     var startDate = data.dataset.start_date;
  //     var endDate = data.dataset.end_date;
  //     var dates = unpack(data.dataset.data, 0);
  //     var closingPrices = unpack(data.dataset.data, 4);
-      console.log(subject_id)})}
+    
+// console.log(typeof subject_id)})
+
+
+// var bar = document.getElementById("bar");
+// Plotly.restly(bar,"value", [newdata]);
   
 //  data = d3.json("../data/samples.json").then((data) => {
   //var subject_id = data.samples.id;
