@@ -1,10 +1,33 @@
-d3.json("../data/samples.json").then((data) => {
-    console.log(data);
-    var subject_id = data.samples.id;
-    var otu_ids = data.samples.otu_ids;
-    var sample_values = data.samples.sample_values;
-    var otu_labels = data.samples.otu_labels;
-    console.log(subject_id)})
+function unpack(rows, index) {
+    return rows.map(function(row) {
+      return row[index];
+    });
+  }
+  
+  function buildPlot() {
+    d3.json("../data/samples.json").then(function(data) {
+  
+      // Grab values from the data json object to build the plots
+    var subject_id = data.samples.id;  
+
+  //    var stock = data.dataset.dataset_code;
+ //     var startDate = data.dataset.start_date;
+ //     var endDate = data.dataset.end_date;
+ //     var dates = unpack(data.dataset.data, 0);
+ //     var closingPrices = unpack(data.dataset.data, 4);
+      console.log(subject_id)})}
+  
+//  data = d3.json("../data/samples.json").then((data) => {
+  //var subject_id = data.samples.id;
+ //   var subject_id = data.map(row => row.samples.id);
+ //   var otu_ids = data.samples.otu_ids;
+ //   var sample_values = data.samples.sample_values;
+ //   var otu_labels = data.samples.otu_labels;
+ //   console.log(data)
+ //   console.log(subject_id)
+
+
+  
 
 
 //     // Sort the data array using the greekSearchResults value
