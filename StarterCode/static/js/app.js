@@ -1,17 +1,24 @@
-function unpack(rows, index) {
-    return rows.map(function(row) {
-      return row[index];
-    });
-  }
-  
- // function buildPlot() {
-  d3.json("../data/samples.json").then(function(importdata) {
-  var data = importdata
-  var subject_ids = unpack(data.samples, 4) 
-  
-  console.log(data); 
-  console.log(subject_ids)
-  })
+function dropdown(){
+  var dropdown = d3.select("#selSubject")
+  d3.json("../data/samples.json").then(function(data) {
+    var names = data.names;
+    names.forEach(element => {
+    dropdown.append("option").text(element).property("value", element)
+  SelectID(names[0])
+  })})}
+
+dropdown()
+
+function SelectID(dropdown_option) {
+  console.log("Keep on truckin")
+d3.json("../data/samples.json").then(function(data) {
+
+  var samples = data.samples
+  var results = samples.filter(samples => samples.id==dropdown_option)
+  console.log(results)
+})}
+
+
 
 
       // Grab values from the data json object to build the plots
