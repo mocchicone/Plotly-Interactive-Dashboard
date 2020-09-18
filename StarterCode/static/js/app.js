@@ -1,22 +1,84 @@
-function dropdown(){
-  var dropdown = d3.select("#selSubject")
-  d3.json("../data/samples.json").then(function(data) {
-    var names = data.names;
-    names.forEach(element => {
-    dropdown.append("option").text(element).property("value", element)
-  SelectID(names[0])
-  })})}
+function init() {
+  var subject_id = '940'
+}
 
+function getData() {
+  d3.json("../data/samples.json").then((data) => {
+    var subject_IDs = data.samples.map(x => x.id);
+    var sample_values = data.samples.map(x => x.sample_values.slice(0,10));
+    var otu_ids = data.samples.map(x => x.otu_ids.slice(0,10));
+    var otu_labels = data.samples.map(x => x.otu_labels.slice(0,10));    
+  })}
+
+function dropdown() {
+    var dropdown2 = d3.select("#selSubject")
+    d3.json("../data/samples.json").then(function(data) {
+    var subject_IDs = data.samples.map(x => x.id);
+    subject_IDs.forEach(element => {
+    dropdown2.append("option").text(element).property("value", element)
+   })})}
+   
+d3.selectAll("body").on("change", updatePage);
+
+function updatePage() {
+  var dropdownMenu = d3.selectAll("#selSubject").node();
+  var dropdownID = dropdownMenu.id;
+  var selectedID = dropdownMenu.value;
+  var stringID = String(selectedID)
+
+  d3.json("../data/samples.json").then((data) => {
+  var subject_IDs = data.samples.map(x => x.id);
+
+  function selectedIndex(x) {
+    return x==selectedID;
+  }
+
+  var subjectIndex = subject_IDs.findIndex(selectedIndex);
+
+  console.log(subject_IDs);
+  console.log(selectedID);
+  console.log(subjectIndex)
+})}
+
+
+  //     var trace1 = {
+  //     x: data.map(row => row.greekSearchResults),
+  //     y: data.map(row => row.greekName),
+  //     text: data.map(row => row.greekName),
+  //     name: "Greek",
+  //     type: "bar",
+  //     orientation: "h"
+  //   };
+  
+  //   // data
+  //   var chartData = [trace1];
+  
+  //   var layout = {
+  //     title: "Belly Buttom Results for Subject: ", selectionID, 
+  //     margin: {
+  //       l: 100,
+  //       r: 100,
+  //       t: 100,
+  //       b: 100
+  //     }
+  //   };  
+  //   // Render the plot to the div tag with id "bar"
+  //   Plotly.newPlot("bar", chartData, layout);
+  // };
+
+
+
+init()
+getData()
 dropdown()
 
-function SelectID(dropdown_option) {
-  console.log("Keep on truckin")
-d3.json("../data/samples.json").then(function(data) {
 
-  var samples = data.samples
-  var results = samples.filter(samples => samples.id==dropdown_option)
-  console.log(results)
-})}
+// }
+
+
+// }
+
+
 
 
 
