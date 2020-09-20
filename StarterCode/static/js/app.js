@@ -1,7 +1,7 @@
 // add dropdown values to html
 function dropdown() {  
     var dropdown2 = d3.select("#selSubject")
-    d3.json("../data/samples.json").then(function(data) {
+    d3.json("data/samples.json").then(function(data) {
     var subject_IDs = data.samples.map(x => x.id);
     subject_IDs.forEach(element => {
     dropdown2.append("option").text(element).property("value", element)
@@ -15,7 +15,7 @@ function updatePage() {
   var dropdownMenu = d3.selectAll("#selSubject").node();
   var selectedID = dropdownMenu.value;
 
-  d3.json("../data/samples.json").then((data) => {
+  d3.json("data/samples.json").then((data) => {
   
   var subject_IDs = data.samples.map(x => x.id);
   var sample_values = data.samples.map(x => x.sample_values.slice(0,10));
@@ -80,7 +80,7 @@ function updatePage() {
 // initial page shows charts for subject 940    
 function init() {
   
-  d3.json("../data/samples.json").then((data) => {
+  d3.json("data/samples.json").then((data) => {
   
     var sample_values = data.samples.map(x => x.sample_values.slice(0,10));
     var otu_ids = data.samples.map(x => x.otu_ids.slice(0,10));
