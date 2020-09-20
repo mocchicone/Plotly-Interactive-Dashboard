@@ -12,6 +12,8 @@ d3.selectAll("body").on("change", updatePage);
 
 // when dropdown value is selected, pull the data from json and build a horizontal bar chart
 function updatePage() {
+ 
+  
   var dropdownMenu = d3.selectAll("#selSubject").node();
   var selectedID = dropdownMenu.value;
 
@@ -24,7 +26,8 @@ function updatePage() {
   var bub_sample_values = data.samples.map(x => x.sample_values);
   var bub_otu_ids = data.samples.map(x => x.otu_ids);
   var bub_otu_labels = data.samples.map(x => x.otu_labels);
-
+  var demodata = data.metadata
+  
   function selectedIndex(x) {
     return x==selectedID;
   }
@@ -35,6 +38,14 @@ function updatePage() {
   var rys_selected = ry_selected.toString(ry_selected);
   var ryss_selected = rys_selected.split(',');
   var y2_selected = ryss_selected.map(x => 'OTU ' + x);
+  
+
+  var demographics = d3.select("#sample-metadata")
+  var demoSelected = demodata[subjectIndex]
+  console.log("demographics: ", demoSelected)
+
+  demographics.selectAll("div").remove();
+  Object.entries(demoSelected).forEach(([key, value]) => demographics.append("div").text(`${key}: ${value}`))
 
   var trace1 = {
         y: y2_selected,
@@ -93,8 +104,12 @@ function init() {
     var bub_sample_values = data.samples.map(x => x.sample_values);
     var bub_otu_ids = data.samples.map(x => x.otu_ids);
     var bub_otu_labels = data.samples.map(x => x.otu_labels);
+    var demodata = data.metadata
+    var demoSelected = demodata[0]
+    var demographics = d3.select("#sample-metadata")
 
-  
+    Object.entries(demoSelected).forEach(([key, value]) => demographics.append("div").text(`${key}: ${value}`))
+
     var trace1 = {
     y: y2_selected,
     x: sample_values[0].reverse(),
@@ -135,19 +150,3 @@ function init() {
 init();
 dropdown();
 
-// //   var trace3 = [{
-//   domain: { x: [0, 1], y: [0, 1] },
-//   value: washFreq,
-//   title: { text: "Belly Button Washes Per Week" },
-//   type: "indicator",
-//   mode: "gauge+number+delta",
-//   delta: { reference: 400 },
-//   gauge: {
-//     axis: { range: [null, 500] },
-//     steps: [
-//       { range: [0, 250], color: "green" },
-//       { range: [250, 400], color: "grey" }
-//     ],
-//     threshold: {
-//       line: { color: "red", width: 4 },
-//       thickness: 0.75,
