@@ -16,7 +16,7 @@ The steps are described below:
   
 ##### 2. Used JavaScript to Enable Dynamic Charts and Data Display (app.js file)  
   
-  Used JavaScript and D3.js, read the dataset (Json file), created a function to append the sample ids to the dropdown values.
+  Used JavaScript and D3 to read the dataset (Json file) and create a function to append the sample ids to the dropdown values.
   
   ![Adding the Dropdown Values](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/js_adding_dropdown_values.PNG)
   
