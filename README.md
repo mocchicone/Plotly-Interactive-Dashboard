@@ -8,13 +8,13 @@ The deployed site can be found here: https://mocchicone.github.io/Plotly-Interac
 
 The steps are described below:
 
-##### 1. Created a HTML page (index.html file)
+##### 1. Created Page Structure Using HTML (index.html file)
 
   Using bootstrap, created html.index file with sections for the jumbotron, demographics panel, bar graph, and bubble graph.  Created an event handler to allow dynamic changes upon selection of the sample id.   
  
  ![HTML Event Handler](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/html_event_handler.PNG)
   
-##### 2. Used JavaScript to Create Dynamic Charts and Data Displays (app.js file)  
+##### 2. Used JavaScript to Enable Dynamic Charts and Data Display (app.js file)  
   
   Used JavaScript and D3.js, read the dataset (Json file), created a function to append the sample ids to the dropdown values.
   
