@@ -29,5 +29,6 @@ The steps are described below:
 #### 4. Deployed Site
   
   The deployed site can be found here: https://mocchicone.github.io/Plotly-Interactive-Dashboard/  
+
 **Contact:**   
 Mike Occhicone: mpocchicone@gmail.com  
