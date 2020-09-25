@@ -8,23 +8,23 @@ The deployed site can be found here: https://mocchicone.github.io/Plotly-Interac
 
 The steps are described below:
 
-##### 1. Create a HTML page (index.html file)
+##### 1. Created a HTML page (index.html file)
 
   Using bootstrap, created html.index file with sections for the jumbotron, demographics panel, bar graph, and bubble graph.  Created an event handler to allow dynamic changes upon selection of the sample id.   
  
  ![HTML Event Handler](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/html_event_handler.PNG)
   
-##### 2. Use JavaScript to Create Dynamic Charts and Data Displays (app.js file)  
+##### 2. Used JavaScript to Create Dynamic Charts and Data Displays (app.js file)  
   
-  Using JavaScript and D3.js, read the dataset (Json file), created a function to append the sample ids to the dropdown values
+  Used JavaScript and D3.js, read the dataset (Json file), created a function to append the sample ids to the dropdown values.
   
   ![Adding the Dropdown Values](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/js_adding_dropdown_values.PNG)
   
-  Created an event listener change event and a function to transform the data and create a bar chart, bubble graph, and demographics display based on the selected id
+  Created an event listener change event and a function to transform the data and create a bar chart, bubble graph, and demographics display based on the selected id.
 
   ![Data Transformation](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/js_data_extraction_and_transformation.PNG)
   
-##### 3. Use Plotly to Create Bar Chart and Bubble Graph (app.js file)  
+##### 3. Used Plotly to Create Bar Chart and Bubble Graph (app.js file)  
   Used Plotly to create dynamic bar chart and bubble graph.
   
    ![Plotly Chart and Graph](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/plotly_chart_and_graph.PNG)
