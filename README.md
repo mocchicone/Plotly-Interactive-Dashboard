@@ -1,6 +1,6 @@
-# **Belly Button Biodiversity Dashboard Using Javascript, D3, and Plotly**
+# **Belly Button Biodiversity Dashboard Using Javascript, d3, and Plotly**
 
-Using D3, Plotly, JavaScript and Bootstrap, created an interactive dashboard to explore the Belly Button Biodiversity dataset from [NC State, The Public Science Lab](http://robdunnlab.com/projects/belly-button-biodiversity/) which catalogs the microbes that colonize human navels. The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
+Using d3, Plotly, JavaScript and Bootstrap, created an interactive dashboard to explore the Belly Button Biodiversity dataset from [NC State, The Public Science Lab](http://robdunnlab.com/projects/belly-button-biodiversity/) which catalogs the microbes that colonize human navels. The dataset reveals that a small handful of microbial species (also called operational taxonomic units, or OTUs, in the study) were present in more than 70% of people, while the rest were relatively rare.
 
 The deployed site can be found here: https://mocchicone.github.io/Plotly-Interactive-Dashboard/
 
@@ -14,7 +14,7 @@ The steps are described below:
  
  ![HTML Event Handler](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/html_event_handler.PNG)  
 #### 2. Used JavaScript to Enable Dynamic Charts and Data Display (app.js file)  
-  Used JavaScript and D3 to read the dataset (Json file) and create a function to append the sample ids to the dropdown values.
+  Used JavaScript and d3 to read the dataset (Json file) and create a function to append the sample ids to the dropdown values.
   
   ![Adding the Dropdown Values](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/js_adding_dropdown_values.PNG)
   
