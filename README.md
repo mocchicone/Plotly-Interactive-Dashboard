@@ -10,7 +10,7 @@ The steps are described below:
 
 ##### 1. Create a HTML page (index.html file)
 
-  Using bootstrap, created html.index file with with sections for the jumbotron, demographics, bar graph, and bubble graph.  Created an event handler to allow dynamic changes upon selection of the sample id.   
+  Using bootstrap, created html.index file with sections for the jumbotron, demographics panel, bar graph, and bubble graph.  Created an event handler to allow dynamic changes upon selection of the sample id.   
  
  ![HTML Event Handler](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/html_event_handler.PNG)
   
@@ -29,11 +29,9 @@ The steps are described below:
   
    ![Plotly Chart and Graph](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/plotly_chart_and_graph.PNG)
   
-##### 4. Visual of Deployed Site
+##### 4. Deployed Site
   
   The deployed site can be found here: https://mocchicone.github.io/Plotly-Interactive-Dashboard/
-  
-   ![Deployed Site](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/deployed_site.PNG)
 
 **Contact:**   
 Mike Occhicone: mpocchicone@gmail.com  
