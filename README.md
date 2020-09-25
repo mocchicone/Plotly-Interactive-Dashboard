@@ -14,6 +14,7 @@ The steps are described below:
  
  ![HTML Event Handler](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/html_event_handler.PNG)
   
+  
 ##### 2. Used JavaScript to Enable Dynamic Charts and Data Display (app.js file)  
   
   Used JavaScript and D3 to read the dataset (Json file) and create a function to append the sample ids to the dropdown values.
@@ -24,10 +25,11 @@ The steps are described below:
 
   ![Data Transformation](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/js_data_extraction_and_transformation.PNG)
   
+  
 ##### 3. Used Plotly to Create Bar Chart and Bubble Graph (app.js file)  
-  Used Plotly to create dynamic bar chart and bubble graph.
   
    ![Plotly Chart and Graph](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/plotly_chart_and_graph.PNG)
+  
   
 ##### 4. Deployed Site
   
