@@ -12,7 +12,7 @@ The steps are described below:
 
   Using bootstrap, created html.index file with sections for the jumbotron, demographics panel, bar graph, and bubble graph.  Created an event handler to allow dynamic changes upon selection of the sample id.   
  
- ![HTML Event Handler](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/html_event_handler.PNG)
+ ![HTML Event Handler](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/html_event_handler.PNG)  
   
   
 #### 2. Used JavaScript to Enable Dynamic Charts and Data Display (app.js file)  
@@ -23,17 +23,17 @@ The steps are described below:
   
   Created an event listener change event and a function to transform the data and create a bar chart, bubble graph, and demographics display based on the selected id.
 
-  ![Data Transformation](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/js_data_extraction_and_transformation.PNG)
+  ![Data Transformation](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/js_data_extraction_and_transformation.PNG)  
   
   
 #### 3. Used Plotly to Create Bar Chart and Bubble Graph (app.js file)  
   
-   ![Plotly Chart and Graph](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/plotly_chart_and_graph.PNG)
+   ![Plotly Chart and Graph](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/plotly_chart_and_graph.PNG)  
   
   
 #### 4. Deployed Site
   
-  The deployed site can be found here: https://mocchicone.github.io/Plotly-Interactive-Dashboard/
+  The deployed site can be found here: https://mocchicone.github.io/Plotly-Interactive-Dashboard/  
 
 **Contact:**   
 Mike Occhicone: mpocchicone@gmail.com  
