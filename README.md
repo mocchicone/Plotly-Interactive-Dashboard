@@ -6,6 +6,7 @@ The deployed site can be found here: https://mocchicone.github.io/Plotly-Interac
 
 ![Deployed Site](https://github.com/mocchicone/Plotly-Interactive-Dashboard/blob/master/Images/deployed_site.PNG)
 
+
 The steps are described below:
 
 #### 1. Created Page Structure Using Bootstrap (index.html file)
